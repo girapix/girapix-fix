@@ -1,24 +1,6 @@
 @import './mixins/mixins';
 @import './mixins/reset';
 
+@import './templates/index';
 
-.banner {
-    background: {
-        image: url('./../images/bg-azul.jpg');
-        size: cover;
-        position: bottom center;
-        repeat: no-repeat;
-    }
-}
 
-.nav-color {
-    background-color: rgba($azul, .9) !important;
-}
-
-.btn-principal {
-    background-color: $roxo;
-    color: $branco;
-    &:hover {
-        background-color: darken($roxo, 10%);
-    }
-}

@@ -11,18 +11,6 @@ header {
             height: 80px;
             line-height: 80px;
             @include transition(.3s);
-            .nav-wrapper {
-                .sidenav-trigger {
-
-                }
-                .sidenav {
-                    li {
-                        a {
-                            
-                        }
-                    }
-                }
-            }
         }
     }
 }

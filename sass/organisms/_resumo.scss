@@ -1,0 +1,22 @@
+@import './../atoms/titulos';
+
+.resumo {
+    min-height: 50vh;
+    padding: 40px 0;
+    background: {
+        image: url('./../images/padronagem.png');
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+    }
+    display: flex;
+    align-items: center;
+    .container {
+        .titulos {
+            .subheadline {
+                padding-top: 5vh;
+                padding-bottom: 7vh;
+            }
+        }
+    }
+}
