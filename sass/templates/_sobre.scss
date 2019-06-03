@@ -1,0 +1,40 @@
+@import './../organisms/move';
+
+.banner {
+    background: {
+        image: url('./../images/bg-roxo.jpg');
+        size: cover;
+        position: bottom center;
+        repeat: no-repeat;
+    }
+    @include mq('desktop-ultra') {
+        background-image: url('./../images/bg-roxo-ultra.jpg');
+    }
+}
+
+.nav-color {
+    background-color: rgba($roxo, .9) !important;
+}
+
+.btn-principal {
+    background-color: $azul;
+    color: $branco;
+    &:hover {
+        background-color: darken($azul, 10%);
+    }
+}
+
+.contato {
+    background-color: $roxo;
+}
+
+footer {
+    background-color: $roxo;
+}
+
+.sidenav-box {
+    height: 100%;
+    width: 100%;
+    background-color: rgba($roxo, .7);
+    padding: 40px 0;
+}

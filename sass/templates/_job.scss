@@ -1,0 +1,37 @@
+@import './../organisms/jobs';
+
+.banner {
+    background: {
+        image: url('./../images/bg-job.jpg');
+        size: cover;
+        position: bottom center;
+        repeat: no-repeat;
+    }
+}
+
+.nav-color {
+    background-color: rgba($roxo, .9) !important;
+}
+
+.btn-principal {
+    background-color: $azul;
+    color: $branco;
+    &:hover {
+        background-color: darken($azul, 10%);
+    }
+}
+
+.contato {
+    background-color: $roxo;
+}
+
+footer {
+    background-color: $roxo;
+}
+
+.sidenav-box {
+    height: 100%;
+    width: 100%;
+    background-color: rgba($roxo, .7);
+    padding: 40px 0;
+}
