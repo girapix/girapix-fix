@@ -34,6 +34,7 @@
                 p {
                     color: $branco;
                     @include font-size(20px);
+                    padding-top: 20px;
                     @include mq('dektop') {
                         @include font-size(30px);
                     }
