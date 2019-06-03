@@ -20,7 +20,7 @@
 .btn-principal {
     background-color: $roxo;
     color: $branco;
-    &:hover {
+    &:hover, &:focus {
         background-color: darken($roxo, 10%);
     }
 }

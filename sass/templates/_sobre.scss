@@ -19,7 +19,7 @@
 .btn-principal {
     background-color: $azul;
     color: $branco;
-    &:hover {
+    &:hover, &:focus {
         background-color: darken($azul, 10%);
     }
 }
