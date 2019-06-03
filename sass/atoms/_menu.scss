@@ -1,0 +1,12 @@
+
+.menu-site {
+    li {
+        a {
+            color: $branco;
+            &:hover,
+            &:focus {
+                color: $amarelo;
+            }
+        }
+    }
+}

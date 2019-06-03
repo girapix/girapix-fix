@@ -1,0 +1,10 @@
+// Importar o mixins.css
+@import 'mixins/mixins';
+
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+@import 'mixins/reset';
+
+@import 'molecules/header';
+@import 'molecules/contato';
+@import 'molecules/footer';

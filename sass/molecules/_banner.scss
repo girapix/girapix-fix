@@ -1,0 +1,50 @@
+.banner {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .container {
+        position: relative;
+        .banner-content {
+            padding: 40px 0 20px;
+            .banner-textos {
+                color: $branco;
+                margin-bottom: 4vh;
+                @include mq('tablet') {
+                    padding-right: 33%;
+                }
+                h1{
+                    color: $amarelo;
+                    font-weight: $bold;
+                    margin: 1vh 0 2vh;
+                    @include font-size(30px);
+                    @include mq('desktop') {
+                        margin: 2vh 0 4vh;
+                        @include font-size(40px);
+                    }
+                }
+                h2 {
+                    font-family: $khand;
+                    @include font-size(20px);
+                    @include mq('desktop') {
+                        @include font-size(30px);
+                    }
+                }
+                p {
+                    @include font-size(16px);
+                    @include mq('desktop') {
+                        @include font-size(20px);
+                    }
+                }
+            }
+        }
+        
+    }
+    .slide-call {
+        color: $branco;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+    }
+}

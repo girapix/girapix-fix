@@ -1,0 +1,28 @@
+@import './../atoms/logo';
+@import './../atoms/menu';
+@import './../molecules/banner';
+
+header {
+    .navbar-fixed {
+        height: 80px;
+        position: absolute;
+        .navbar {
+            background-color: transparent;
+            height: 80px;
+            line-height: 80px;
+            @include transition(.3s);
+            .nav-wrapper {
+                .sidenav-trigger {
+
+                }
+                .sidenav {
+                    li {
+                        a {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

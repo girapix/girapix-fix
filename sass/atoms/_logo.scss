@@ -1,0 +1,7 @@
+.brand-logo {
+    height: 80px;
+    img {
+        width: 35px;
+        @include vertical-center();
+    }
+}
