@@ -17,22 +17,26 @@
                     color: $amarelo;
                     font-weight: $bold;
                     margin: 1vh 0 2vh;
-                    @include font-size(30px);
+                    @include font-size(25px);
                     @include mq('desktop') {
                         margin: 2vh 0 4vh;
-                        @include font-size(40px);
+                        @include font-size(30px);
+                    }
+                    @include mq('desktop-ultra') {
+                        margin: 2vh 0 4vh;
+                        @include font-size(50px);
                     }
                 }
                 h2 {
                     font-family: $khand;
                     @include font-size(20px);
-                    @include mq('desktop') {
-                        @include font-size(30px);
+                    @include mq('desktop-ultra') {
+                        @include font-size(25px);
                     }
                 }
                 p {
                     @include font-size(16px);
-                    @include mq('desktop') {
+                    @include mq('desktop-ultra') {
                         @include font-size(20px);
                     }
                 }

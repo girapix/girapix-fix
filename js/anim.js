@@ -1,3 +1,4 @@
+AOS.init();
 $(function () {
     $('.sidenav').sidenav();
 

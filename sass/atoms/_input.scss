@@ -13,7 +13,7 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid $dourado;
+    border-bottom: 1px solid $amarelo;
     border-radius: 0;
     outline: none;
     height: 3rem;
@@ -57,7 +57,7 @@ input[type=search]:not(.browser-default):disabled,
 input[type=search]:not(.browser-default)[readonly="readonly"],
 textarea.materialize-textarea:disabled,
 textarea.materialize-textarea[readonly="readonly"] {
-    color: rgba($dourado, 0.42);
+    color: rgba($amarelo, 0.42);
     border-bottom: 1px dotted rgba(0, 0, 0, 0.42);
 }
 
@@ -103,9 +103,9 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid $dourado;
-    -webkit-box-shadow: 0 1px 0 0 $dourado;
-    box-shadow: 0 1px 0 0 $dourado;
+    border-bottom: 1px solid $amarelo;
+    -webkit-box-shadow: 0 1px 0 0 $amarelo;
+    box-shadow: 0 1px 0 0 $amarelo;
 }
 
 input:not([type]):focus:not([readonly])+label,
@@ -121,19 +121,19 @@ input[type=tel]:not(.browser-default):focus:not([readonly])+label,
 input[type=number]:not(.browser-default):focus:not([readonly])+label,
 input[type=search]:not(.browser-default):focus:not([readonly])+label,
 textarea.materialize-textarea:focus:not([readonly])+label {
-    color: $dourado;
+    color: $amarelo;
 }
 
 .input-field > label {
-    color: $dourado;
+    color: $amarelo;
 }
 
 input {
-    color: $amarelo;
+    color: $branco;
 }
 
 textarea {
-    color: $amarelo;
+    color: $branco;
 }
 
 // input:-webkit-autofill,
@@ -149,7 +149,7 @@ textarea {
 // select:-webkit-autofill:focus,
 // select:-webkit-autofill:visited {
 //     background-color: $roxo;
-//     -webkit-text-fill-color: $dourado;
+//     -webkit-text-fill-color: $amarelo;
 //     -webkit-box-shadow: 0 0 0px 1000px #000 inset;
 //     transition: background-color 5000s ease-in-out 0s;
 // }
@@ -159,6 +159,6 @@ textarea:-webkit-autofill,
 select:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px $roxo inset !important;
     /*use inset box-shadow to cover background-color*/
-    -webkit-text-fill-color: $amarelo !important;
+    -webkit-text-fill-color: $branco !important;
     /*use text fill color to cover font color*/
 }

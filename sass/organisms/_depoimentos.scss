@@ -24,7 +24,13 @@
                 color: $branco;
                 padding-top: 40px;
                 p {
-                    @include font-size(25px);
+                    @include font-size(16px);
+                    @include mq('desktop') {
+                        @include font-size(20px);
+                    }
+                    @include mq('desktop') {
+                        @include font-size(25px);
+                    }
                     .aspas {
                         color: $amarelo;
                         font-weight: $bold;
