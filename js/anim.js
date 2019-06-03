@@ -20,3 +20,37 @@ $(function () {
         }
     });
 });
+
+$(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                autoheight: true
+            },
+            400: {
+                items: 1,
+                nav: true,
+                autoheight: true
+            },
+            600: {
+                items: 1,
+                nav: true,
+                autoheight: true
+            },
+            1000: {
+                items: 1,
+                nav: false,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: false,
+                autoheight: true
+            },
+        }
+    })
+});

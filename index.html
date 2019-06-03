@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Girapix | Comunicação Digital</title>
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -16,6 +17,7 @@
     <!-- Animações CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <!-- Plugins -->
     <link rel="stylesheet" href="css/plugins.css">
 </head>
@@ -25,11 +27,10 @@
         
         <ul class="sidenav" id="slide-out">
             <div class="sidenav-box">
-                <li><a href="#home" class="white-text">início</a></li>
-                <li><a href="#sobre" class="white-text">sobre</a></li>
-                <li><a href="#portfolio" class="white-text">portfólio</a></li>
-                <li><a href="#blog" class="white-text">blog</a></li>
-                <li><a href="#contato" class="white-text">contato</a></li>
+                <li><a href="index.html" class="white-text">início</a></li>
+                <li><a href="sobre.html" class="white-text">sobre</a></li>
+                <li><a href="portfolio.html" class="white-text">portfólio</a></li>
+                <li><a href="contato.html" class="white-text">contato</a></li>
             </div>
         </ul>
         <!-- Cabeçalho do site -->
@@ -39,11 +40,10 @@
                     <a href="index.html" class="brand-logo left"><img src="images/girapix.png" alt="Girapix | Comunicação Digital"></a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger right"><span class="iconify" data-icon="feather:align-center" data-inline="false"></span></a>
                     <ul class="right hide-on-med-and-down menu-site">
-                        <li><a href="#home">início</a></li>
-                        <li><a href="#sobre">sobre</a></li>
-                        <li><a href="#portfolio">portfólio</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#contato">contato</a></li>
+                        <li><a href="index.html">início</a></li>
+                        <li><a href="sobre.html">sobre</a></li>
+                        <li><a href="portfolio.html">portfólio</a></li>
+                        <li><a href="contato.html">contato</a></li>
                     </ul>
                 </div>
             </nav>
@@ -123,8 +123,8 @@
                         <figcaption>
                             <a href="job.html">
                                 <span class="btn-floating yellow"><i class="material-icons">add</i></span>
-                                <h3>Nome da Empresa</h3>
-                                <p>Job</p>
+                                <h3>My Life Fotografias</h3>
+                                <p>Web Site</p>
                             </a>
                             <div class="overlay"></div>
                         </figcaption>
@@ -203,13 +203,33 @@
                 <div class="titulos" data-aos="fade-up">
                     <h1 class="amarelo">O que dizem de nós?</h1>
                 </div>
-                <div class="row depoimentos-area col s12 l10 offset-l1">
+                <div class="row depoimentos-area col s12 l10 offset-l1 offset-l1">
                     <div class="col s12 l5 depoimento-foto" data-aos="fade-right">
                         <img src="images/depoimentos.png" alt="Fotos dos clientes">
                     </div>
-                    <div class="col s12 l5 depoimentos-texto" data-aos="fade-left">
-                        <p><span class="aspas">"</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat repellendus ad dolores quos, perspiciatis architecto itaque eius. Quam repellendus maiores enim, quibusdam dolore incidunt assumenda labore voluptate consequuntur esse accusantium."</p>
-                        <p class="assinatura-cliente">João Silva - Empresa Inovare</p>
+                    <div class="col s12 l6 offset-l1 depoimento-carousel" data-aos="fade-left">
+                        <div class="owl-carousel owl-theme image-slider">
+                            <div class="owl-depoimento">
+                                <p><span class="amarelo">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore quam iusto et aut odit cum sequi reprehenderit rerum laborum. Autem necessitatibus delectus quas quia in nisi. Voluptatum et beatae eveniet itaque, aliquam pariatur consequuntur, quos magni nisi molestias corporis mollitia similique sapiente illum saepe cum officiis perferendis libero esse?<span class="amarelo">"</span></p>
+                                <h3>Cliente Fulano de Tal</h3>
+                            </div>
+                            <div class="owl-depoimento">
+                                <p><span class="amarelo">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore quam iusto et aut odit cum sequi reprehenderit rerum laborum. Autem necessitatibus delectus quas quia in nisi. Voluptatum et beatae eveniet itaque, aliquam pariatur consequuntur, quos magni nisi molestias corporis mollitia similique sapiente illum saepe cum officiis perferendis libero esse?<span class="amarelo">"</span></p>
+                                <h3>Cliente Fulano de Tal</h3>
+                            </div>
+                            <div class="owl-depoimento">
+                                <p><span class="amarelo">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore quam iusto et aut odit cum sequi reprehenderit rerum laborum. Autem necessitatibus delectus quas quia in nisi. Voluptatum et beatae eveniet itaque, aliquam pariatur consequuntur, quos magni nisi molestias corporis mollitia similique sapiente illum saepe cum officiis perferendis libero esse?<span class="amarelo">"</span></p>
+                                <h3>Cliente Fulano de Tal</h3>
+                            </div>
+                            <div class="owl-depoimento">
+                                <p><span class="amarelo">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore quam iusto et aut odit cum sequi reprehenderit rerum laborum. Autem necessitatibus delectus quas quia in nisi. Voluptatum et beatae eveniet itaque, aliquam pariatur consequuntur, quos magni nisi molestias corporis mollitia similique sapiente illum saepe cum officiis perferendis libero esse?<span class="amarelo">"</span></p>
+                                <h3>Cliente Fulano de Tal</h3>
+                            </div>
+                            <div class="owl-depoimento">
+                                <p><span class="amarelo">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore quam iusto et aut odit cum sequi reprehenderit rerum laborum. Autem necessitatibus delectus quas quia in nisi. Voluptatum et beatae eveniet itaque, aliquam pariatur consequuntur, quos magni nisi molestias corporis mollitia similique sapiente illum saepe cum officiis perferendis libero esse?<span class="amarelo">"</span></p>
+                                <h3>Cliente Fulano de Tal</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -356,6 +376,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Animações -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="js/anim.js"></script>
 </body>
 </html>

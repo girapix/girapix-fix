@@ -6,8 +6,8 @@
         position: right top;
     }
     height: 100%;
+    padding: 40px 0;
     .container {
-        padding: 40px 0;
         .depoimentos-area {
             display: flex;
             justify-content: space-around;
@@ -17,30 +17,22 @@
             overflow: hidden;
             .depoimento-foto {
                 margin: 0;
-                img {
-                    width: 100%;
-                }
             }
-            .depoimentos-texto {
-                color: $branco;
-                padding-top: 40px;
+            .owl-depoimento {
+                margin-top: 20px;
+                @include mq('desktop') {
+                    margin-top: 0;
+                }
                 p {
-                    @include font-size(16px);
-                    @include mq('desktop') {
-                        @include font-size(20px);
-                    }
-                    @include mq('desktop') {
-                        @include font-size(25px);
-                    }
-                    .aspas {
+                    color: $branco;
+                    @include font-size(20px);
+                    text-align: justify;
+                    .amarelo {
                         color: $amarelo;
-                        font-weight: $bold;
-                        @include font-size(35px);
                     }
                 }
-                .assinatura-cliente {
-                    @include font-size(15px);
-                    float: right;
+                h3 {
+                    text-align: right;
                     color: $amarelo;
                 }
             }
