@@ -1,7 +1,7 @@
 .blog {
     height: 100%;
     background: {
-        image: url('./../images/site/padronagem.png');
+        image: url('./../images/padronagem.png');
         size: cover;
         repeat: no-repeat;
         position: bottom center;
@@ -10,6 +10,7 @@
         margin-bottom: 0;
         padding: 40px 0;
         .postagens {
+            overflow: hidden;
             .blog-post {
                 padding-top: 40px;
                 .card-image {

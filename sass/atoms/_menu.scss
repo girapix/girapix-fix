@@ -10,3 +10,28 @@
         }
     }
 }
+
+.sidenav-trigger {
+    @include font-size(40px);
+}
+.sidenav {
+    background: {
+        image: url('./../images/padronagem-azul.jpg');
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+    }
+    width: 80%;
+    overflow: hidden;
+    .sidenav-box {
+        li {
+            line-height: 10vh;
+            height: 10vh;
+            a {
+                line-height: 10vh;
+                height: 10vh;
+                @include font-size(25px);
+            }
+        }
+    }
+}

@@ -22,20 +22,23 @@
 <body>
     <!-- Conteudo do topo do site -->
     <header>
+        
+        <ul class="sidenav" id="slide-out">
+            <div class="sidenav-box">
+                <li><a href="#home" class="white-text">início</a></li>
+                <li><a href="#sobre" class="white-text">sobre</a></li>
+                <li><a href="#portfolio" class="white-text">portfólio</a></li>
+                <li><a href="#blog" class="white-text">blog</a></li>
+                <li><a href="#contato" class="white-text">contato</a></li>
+            </div>
+        </ul>
         <!-- Cabeçalho do site -->
         <div class="navbar-fixed">
-            <nav class="navbar z-depth-0" data-aos="fade-down">
-                <div class="nav-wrapper container">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container" data-aos="fade-down">
                     <a href="index.html" class="brand-logo left"><img src="images/girapix.png" alt="Girapix | Comunicação Digital"></a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger right"><span class="iconify" data-icon="feather:align-center" data-inline="false"></span></a>
                     <ul class="right hide-on-med-and-down menu-site">
-                        <li><a href="#home">início</a></li>
-                        <li><a href="#sobre">sobre</a></li>
-                        <li><a href="#portfolio">portfólio</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#contato">contato</a></li>
-                    </ul>
-                    <ul class="sidenav" id="slide-out">
                         <li><a href="#home">início</a></li>
                         <li><a href="#sobre">sobre</a></li>
                         <li><a href="#portfolio">portfólio</a></li>
@@ -214,11 +217,11 @@
         <!-- Resumo do blog -->
         <section class="blog scrollspy" id="blog">
             <div class="row container">
-                <div class="titulos"  data-aos="fade-left">
+                <div class="titulos">
                     <h1 class="roxo">Noticias quentinhas</h1>
                 </div>
-                <div class="row postagens" data-aos="fade-up">
-                    <div class="col s12 l4 blog-post">
+                <div class="row postagens">
+                    <div class="col s12 l4 blog-post" data-aos="fade-right">
                         <div class="card">
                             <div class="card-image">
                                 <img src="./images/portfolio-1.jpg">
@@ -232,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 l4 blog-post">
+                    <div class="col s12 l4 blog-post" data-aos="fade-up">
                         <div class="card">
                             <div class="card-image">
                                 <img src="./images/portfolio-1.jpg">
@@ -246,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 l4 blog-post">
+                    <div class="col s12 l4 blog-post" data-aos="fade-left">
                         <div class="card">
                             <div class="card-image">
                                 <img src="./images/portfolio-1.jpg">
@@ -266,28 +269,28 @@
         <!-- Formulário de Contato -->
         <!-- Contato -->
         <section class="contato scrollspy" id="contato">
-            <div class="row container titulos" data-aos="fade-up">
+            <div class="row container titulos">
                 <h1 class="amarelo">Contatos</h1>
             </div>
             <div class="row container formulario">
                 <form autocomplete="off" action="">
-                    <div class="input-field col s12 l6" data-aos="fade-right">
+                    <div class="input-field col s12 l6">
                         <input type="text" id="nome" class="validate" data-leght="60">
                         <label for="nome">Me diz seu nome?</label>
                     </div>
-                    <div class="input-field col s12 l6" data-aos="fade-left">
+                    <div class="input-field col s12 l6">
                             <input type="text" id="empresa" class="validate" data-leght="60">
                             <label for="empresa">Qual nome da sua empresa?</label>
                         </div>
-                    <div class="input-field col s12 l6" data-aos="fade-right">
+                    <div class="input-field col s12 l6">
                         <input type="email" id="email" class="validate" data-leght="60">
                         <label for="email" data-error="wrong" data-success="right">Qual seu email?</label>
                     </div>
-                    <div class="input-field col s12 l6" data-aos="fade-left">
+                    <div class="input-field col s12 l6">
                         <input autocomplete="off" type="text" id="number" class="validate" data-leght="30">
                         <label for="number" data-error="wrong" data-success="right">E seu telefone, qual é?</label>
                     </div>
-                    <div class="input-field col s12" data-aos="fade-up">
+                    <div class="input-field col s12">
                         <textarea id="textarea1" class="materialize-textarea" data-leght="250"></textarea>
                         <label for="textarea1">Me fale sobre seu projeto...</label>
                     </div>
