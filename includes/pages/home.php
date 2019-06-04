@@ -18,25 +18,25 @@
             <div class="row servicos-content">
                 <div class="row servicos-item col s12 m6 l2 center">
                     <div class="row item-img" data-aos="zoom-in">
-                        <img src="./images/webdesign.svg" alt="Web Design">
+                        <img src="<?php bloginfo('template_url'); ?>/images/webdesign.svg" alt="Web Design">
                     </div>
                     <p>Web Design</p>
                 </div>
                 <div class="row servicos-item col s12 m6 l2 center">
                     <div class="row item-img" data-aos="zoom-in">
-                        <img src="./images/marketing.svg" alt="Marketing Digital">
+                        <img src="<?php bloginfo('template_url'); ?>/images/marketing.svg" alt="Marketing Digital">
                     </div>
                     <p>Marketing Digital</p>
                 </div>
                 <div class="row servicos-item col s12 m6 l2 center">
                     <div class="row item-img" data-aos="zoom-in">
-                        <img src="./images/social.svg" alt="Social Media">
+                        <img src="<?php bloginfo('template_url'); ?>/images/social.svg" alt="Social Media">
                     </div>
                     <p>Social Media</p>
                 </div>
                 <div class="row servicos-item col s12 m6 l2 center">
                     <div class="row item-img" data-aos="zoom-in">
-                        <img class="design" src="./images/design.svg" alt="Design Gráfico">
+                        <img class="design" src="<?php bloginfo('template_url'); ?>/images/design.svg" alt="Design Gráfico">
                     </div>
                     <p>Design Gráfico</p>
                 </div>
@@ -51,7 +51,7 @@
         <div class="row portfolio-content">
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -64,7 +64,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -77,7 +77,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -90,7 +90,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -103,7 +103,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -116,7 +116,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -137,7 +137,7 @@
             </div>
             <div class="row depoimentos-area col s12 l10 offset-l1 offset-l1">
                 <div class="col s12 l5 depoimento-foto" data-aos="fade-right">
-                    <img src="images/depoimentos.png" alt="Fotos dos clientes">
+                    <img src="<?php bloginfo('template_url'); ?>/images/depoimentos.png" alt="Fotos dos clientes">
                 </div>
                 <div class="col s12 l6 offset-l1 depoimento-carousel" data-aos="fade-left">
                     <div class="owl-carousel owl-theme image-slider">
@@ -167,7 +167,7 @@
         </div>
     </section>
     <!-- Resumo do blog -->
-    <section class="blog scrollspy" id="blog">
+    <section class="blog-resume scrollspy" id="blog">
         <div class="row container">
             <div class="titulos">
                 <h1 class="roxo">Noticias quentinhas</h1>
@@ -176,7 +176,7 @@
                 <div class="col s12 l4 blog-post" data-aos="fade-right">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./images/portfolio-1.jpg">
+                            <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg">
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i
                                     class="material-icons">add</i></a>
                         </div>
@@ -190,7 +190,7 @@
                 <div class="col s12 l4 blog-post" data-aos="fade-up">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./images/portfolio-1.jpg">
+                            <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg">
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i
                                     class="material-icons">add</i></a>
                         </div>
@@ -204,7 +204,7 @@
                 <div class="col s12 l4 blog-post" data-aos="fade-left">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./images/portfolio-1.jpg">
+                            <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg">
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i
                                     class="material-icons">add</i></a>
                         </div>
@@ -285,10 +285,10 @@
         </div>
         <div class="row container sociais">
             <div class="sociais-itens col s12 l4 offset-l4">
-                <a href="#" data-aos="zoom-in"><img src="./images/facebook.svg" alt="Facebook"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/instagram.svg" alt="Instagram"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/whatsapp.svg" alt="WhatsApp"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/telegram.svg" alt="Telegram"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/whatsapp.svg" alt="WhatsApp"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/telegram.svg" alt="Telegram"></a>
             </div>
         </div>
     </section>

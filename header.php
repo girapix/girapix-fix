@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Girapix | Comunicação digital">
+    <meta name="author" content="Girapix | Comunicação Digital">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Girapix | Comunicação Digital</title>
+    <title><?php bloginfo('name'); ?></title>
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Icones -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.iconify.design/1/1.0.2/iconify.min.js"></script>
     <!-- Estilos -->
-    <link rel="stylesheet" href="<?php echo $style; ?>">
-    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/<?php echo $style; ?>">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/geral.css">
     <!-- Animações CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="js/owl/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/owl/assets/owl.carousel.min.css" />
     <!-- Plugins -->
-    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/plugins.css">
 </head>
-<body>
+<body <?php body_class(); ?>>
     <!-- Conteudo do topo do site -->
     <header>
         <ul class="sidenav" id="slide-out">
@@ -36,7 +39,7 @@
         <div class="navbar-fixed">
             <nav class="navbar z-depth-0">
                 <div class="nav-wrapper container" data-aos="fade-down">
-                    <a href="index.php" class="brand-logo left"><img src="images/girapix.png" alt="Girapix | Comunicação Digital"></a>
+                    <a href="<?php bloginfo('url'); ?>" class="brand-logo left"><img src="<?php bloginfo('template_url'); ?>/images/girapix.png" alt="Girapix | Comunicação Digital"></a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger right"><span class="iconify" data-icon="feather:align-center" data-inline="false"></span></a>
                     <ul class="right hide-on-med-and-down menu-site">
                         <li><a href="index.php">início</a></li>
