@@ -66,10 +66,10 @@
         </div>
         <div class="row container sociais">
             <div class="sociais-itens col s12 l4 offset-l4">
-                <a href="#" data-aos="zoom-in"><img src="./images/facebook.svg" alt="Facebook"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/instagram.svg" alt="Instagram"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/whatsapp.svg" alt="WhatsApp"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/telegram.svg" alt="Telegram"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/whatsapp.svg" alt="WhatsApp"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/telegram.svg" alt="Telegram"></a>
             </div>
         </div>
     </section>

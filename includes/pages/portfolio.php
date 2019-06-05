@@ -7,7 +7,7 @@
         <div class="row portfolio-content">
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -20,7 +20,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -33,7 +33,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -46,7 +46,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -59,7 +59,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>
@@ -72,7 +72,7 @@
             </div>
             <div class="portfolio-item" data-aos="fade-up">
                 <figure>
-                    <img src="./images/portfolio-1.jpg" alt="Thumb do job da Empresa">
+                    <img src="<?php bloginfo('template_url'); ?>/images/portfolio-1.jpg" alt="Thumb do job da Empresa">
                     <figcaption>
                         <a href="job.php">
                             <span class="btn-floating yellow"><i class="material-icons">add</i></span>

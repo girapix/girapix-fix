@@ -3,7 +3,7 @@
     <section class="move scrollpsy" id="move">
         <div class="row container">
             <div class="col s12 l5 move-girapix" data-aos="fade-right">
-                <img src="images/oquenosmove.svg" alt="O que nos move?">
+                <img src="<?php bloginfo('template_url'); ?>/images/oquenosmove.svg" alt="O que nos move?">
             </div>
             <div class="col s12 l6 offset-l1 move-texto" data-aos="fade-left">
                 <h1 class="amarelo">O que nos move?</h1>
@@ -18,7 +18,7 @@
     <section class="motivacional scrollspy" id="motivacional">
         <div class="row container">
             <div class="col s12 l5 motivacional-texto">
-                <p>Nós acreditamos no poder que uma boa história em, e por isso focamos tanto em contar a trajetória de cada um dos nossos clientes.</p>
+                <p>Nós acreditamos no poder que uma boa história tem, e por isso focamos tanto em contar a trajetória de cada um dos nossos clientes.</p>
                 <br>
                 <p>Sobretudo, somos jovens, determinados e criativos, com muito conhecimento especifico, e principalmente, muita vontade em inspirar e ajudar pessoas a atingir seus objetivos.</p>
             </div>
@@ -29,20 +29,50 @@
         </div>
     </section>
     <section class="equipe">
-        <div class="row container">
-            <div class="col s12 l4 equipe-membro center">
-                <div class="membro-img" data-aos="zoom-in"><img src="./images/cleo.png" alt=""></div>
-                <h1>Cléo Maria</h1>
-                <h2>Social Media</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique ipsum vero nulla praesentium nostrum at quia, placeat fugiat atque, culpa velit hic? Aliquid itaque, eveniet voluptatem dolorem odit deleniti molestiae vitae?</p>
-            </div>
-            <div class="col s12 l4 equipe-membro center">
-                <div class="membro-img" data-aos="zoom-in"><img src="./images/elli.png" alt=""></div>
-                <h1>Ellifaz Siqueira</h1>
-                <h2>Web Designer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique ipsum vero nulla praesentium nostrum at quia, placeat fugiat atque, culpa velit hic? Aliquid itaque, eveniet voluptatem dolorem odit deleniti molestiae vitae?</p>
-            </div>
+
+        <?php query_posts('post_type=equipe&post_per_page=3'); ?>
+        <div class="row container time">
+            <?php if(have_posts()) : ?>
+                <?php while(have_posts()) : the_post(); ?>
+
+                <div class="col s12 l4 equipe-membro center">
+                    <div class="membro-img" data-aos="zoom-in">
+                    <?php 
+
+                    $image = get_field('avatar-time');
+
+                    if( !empty($image) ): ?>
+
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                    <?php endif; ?>
+                    </div>
+                    <h1><?php the_title(); ?></h1>
+                    <?php 
+
+                    $funcao = get_field('funcao-time');
+
+                    if( !empty($funcao) ): ?>
+
+                        <h2><?php echo $funcao ?></h2>
+
+                    <?php endif; ?>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique ipsum vero nulla praesentium nostrum at quia, placeat fugiat atque, culpa velit hic? Aliquid itaque, eveniet voluptatem dolorem odit deleniti molestiae vitae?</p>
+                </div>
+
+                <?php endwhile; ?>
+
+            <?php else : ?>
+                Não há membros da equipe cadastrados...
+
+            <?php endif; ?>
+
+            
         </div>
+        <?php wp_reset_query(); ?>
+
+        
+            
     </section>
     <!-- Formulário de Contato -->
     <section class="contato scrollspy" id="contato">
@@ -111,10 +141,10 @@
         </div>
         <div class="row container sociais">
             <div class="sociais-itens col s12 l4 offset-l4">
-                <a href="#" data-aos="zoom-in"><img src="./images/facebook.svg" alt="Facebook"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/instagram.svg" alt="Instagram"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/whatsapp.svg" alt="WhatsApp"></a>
-                <a href="#" data-aos="zoom-in"><img src="./images/telegram.svg" alt="Telegram"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/whatsapp.svg" alt="WhatsApp"></a>
+                <a href="#" data-aos="zoom-in"><img src="<?php bloginfo('template_url'); ?>/images/telegram.svg" alt="Telegram"></a>
             </div>
         </div>
     </section>

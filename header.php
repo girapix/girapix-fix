@@ -41,23 +41,29 @@
                 <div class="nav-wrapper container" data-aos="fade-down">
                     <a href="<?php bloginfo('url'); ?>" class="brand-logo left"><img src="<?php bloginfo('template_url'); ?>/images/girapix.png" alt="Girapix | Comunicação Digital"></a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger right"><span class="iconify" data-icon="feather:align-center" data-inline="false"></span></a>
-                    <ul class="right hide-on-med-and-down menu-site">
-                        <li><a href="index.php">início</a></li>
-                        <li><a href="sobre.php">sobre</a></li>
-                        <li><a href="portfolio.php">portfólio</a></li>
-                        <li><a href="contato.php">contato</a></li>
-                    </ul>
+                    <?php include 'includes/molecules/menu.php'; ?>
                 </div>
             </nav>
         </div>
+        <style>
+            <?php if(get_the_post_thumbnail()) : ?>
+                .banner {
+                    background-image: url('<?php the_post_thumbnail_url(); ?>');
+                }
+            <?php else : ?>
+            .banner {
+                    background-image: url('<?php bloginfo('template_url'); ?>/images/bg-azul.jpg');
+                }
+            <?php endif; ?>
+        </style>
         <!-- banner do site -->
         <section class="banner scrollspy" id="home">
             <div class="row container">
                 <div class="col s12 l8 banner-content" data-aos="fade-right">
                     <div class="banner-textos left">
-                        <h2>Girapix | Comunicação Digital</h2>
+                        <h2><?php bloginfo('name'); ?></h2>
                         <h1><?php echo $bannerH1; ?></h1>
-                        <p><?php echo $bannerP; ?></p>
+                        <p><?php the_excerpt(); ?></p>
                     </div>
                     <a href="#contato" class="waves-effect waves-light btn-large btn-principal btn-anim">Contato</a>
                 </div>
